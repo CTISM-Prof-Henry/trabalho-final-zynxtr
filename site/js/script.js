@@ -116,7 +116,7 @@ function listarMuseus() {
 
     <img src="${museu.imagem}" style="width:100%; margin:15px 0; border-radius:8px;">
 
-    <a href="../../../Downloads/trabalho-final-zynxtr-main/site/pages/meu-museu.html">
+    <a href="../pages/meu-museu.html">
         <button class="btn">Abrir Museu</button>
     </a>
 </div>
