@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Criar Museu</title>
+
+
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+  <h1>Criar Museu</h1>
+
+</header>
+
+
+<main class="container">
+
+
+  <section class="card">
+
+    <h2>Novo Museu</h2>
+
+    <form>
+
+
+      <label for="imagem">
+
+        Escolha uma imagem
+
+      </label>
+
+      <input
+              type="file"
+              id="imagem"
+              accept="image/*">
+
+
+      <label for="titulo">
+
+        Título do Museu
+
+      </label>
+
+      <input
+              type="text"
+              id="titulo"
+              maxlength="35"
+              placeholder="Digite o título do museu">
+
+
+      <label for="descricao">
+
+        Descrição
+
+      </label>
+
+      <textarea
+              id="descricao"
+              maxlength="250"
+              placeholder="Conte a história do seu museu"></textarea>
+
+    </form>
+
+
+    <button
+            class="btn"
+            onclick="salvarMuseu()">
+
+      Finalizar Museu
+
+    </button>
+
+  </section>
+
+</main>
+
+
+<script src="../js/script.js"></script>
+
+
+</body>
+
+</html>
