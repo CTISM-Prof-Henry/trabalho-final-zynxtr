@@ -12,30 +12,36 @@ O projeto deve ser publicado no **GitHub Pages** e apresentado em aula para o pr
 
 ## 📌 Checklist
 
-* [ ] meu site tem pelo menos um arquivo do tipo `.html` 
-* [ ] estou usando CSS externo, em um arquivo separado `.css`
-* [ ] estou usando Javascript externo, em um arquivo separado `.js`
-* [ ] os arquivos do meu site estão na pasta `site`
-* [ ] a pasta `site` tem um arquivo `index.html`, que é a página inicial do meu site; sem esse arquivo, o GitHub Pages 
+* [x] meu site tem pelo menos um arquivo do tipo `.html` 
+* [x] estou usando CSS externo, em um arquivo separado `.css`
+* [x] estou usando Javascript externo, em um arquivo separado `.js`
+* [] os arquivos do meu site estão na pasta `site`
+* [x] a pasta `site` tem um arquivo `index.html`, que é a página inicial do meu site; sem esse arquivo, o GitHub Pages 
       não vai funcionar
-* [ ] estou ciente que, se eu modificar ou excluir arquivos que não estejam na pasta `site` 
+* [x] estou ciente que, se eu modificar ou excluir arquivos que não estejam na pasta `site` 
       (por exemplo, `.github` ou `README.md`), isso pode afetar o funcionamento do meu site
-* [ ] respondi todas as perguntas e preenchi todos os checkboxes abaixo
+* [x] respondi todas as perguntas e preenchi todos os checkboxes abaixo
 * [ ] meu site está hospedado no GitHub Pages, no link `<escreva aqui o link do seu site>`
 
 ## 📖 Descrição do projeto
 
 Descreva abaixo **sobre o que se trata seu site:**
 
-- **Tema:**
-- **Público-alvo:**
-- **Funcionalidades:**
+- **Tema:museu virtual
+- **Público-alvo:**Pessoas que desejam guardar e visualizar suas lembranças em um museu virtual.
+- **Funcionalidades:* *Criar um museu virtual.
+  Escolher uma imagem do computador.
+  Adicionar um título.
+  Escrever uma descrição.
+  Salvar os dados utilizando Local Storage.
+  Visualizar o museu criado.
+  Listar o museu criado na página "Salas".
 
 ## Uso de IA
 
 Se você utilizou uma IA, marque a caixa abaixo e preencha os campos:
 
-* [ ] declaro que utilizei uma IA para me auxiliar na elaboração do trabalho, mas que domino os conceitos vistos em aula
+* [x ] declaro que utilizei uma IA para me auxiliar na elaboração do trabalho, mas que domino os conceitos vistos em aula
   e saberei explicá-los quando indagado pelo professor.
 
 * **IA utilizada:**
@@ -51,64 +57,64 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 
 #### Estrutura básica
 
-- [ ] `<!DOCTYPE html>`
-- [ ] `<html>`
-- [ ] `<head>`
-- [ ] `<title>`
-- [ ] `<body>`
+- [ x] `<!DOCTYPE html>`
+- [ x `<html>`
+- [x ] `<head>`
+- [x ] `<title>`
+- [x ] `<body>`
 
 #### Estrutura semântica
 
-- [ ] `<header>`
+- [x ] `<header>`
 - [ ] `<nav>`
-- [ ] `<main>`
-- [ ] `<section>`
+- [x ] `<main>`
+- [ x] `<section>`
 - [ ] `<article>`
 - [ ] `<aside>`
 - [ ] `<footer>`
 
 #### Conteúdo
 
-- [ ] Títulos (`h1`, `h2`, `h3`, etc.)
-- [ ] Parágrafos (`p`)
-- [ ] Imagens (`img`)
-- [ ] Links (`a`)
+- [ x] Títulos (`h1`, `h2`, `h3`, etc.)
+- [ x] Parágrafos (`p`)
+- [ x] Imagens (`img`)
+- [ x] Links (`a`)
 - [ ] Listas:
   - [ ] `ul`
   - [ ] `ol`
 
 #### Formulários
 
-- [ ] `<form>`
-- [ ] `<input>`
-- [ ] `<label>`
-- [ ] `<textarea>`
-- [ ] `<button>`
+- [ x] `<form>`
+- [ x] `<input>`
+- [ x] `<label>`
+- [x ] `<textarea>`
+- [x ] `<button>`
 
 ### 🎨 CSS
 
 - Seletor de...
-  - [ ] Classes (`.classe`)
+  - [ x] Classes (`.classe`)
   - [ ] IDs (`#id`)
   - [ ] pseudoclasse (`#a::hover`)
-- [ ] Cores
-- [ ] Tipografia (e.g. `font-family`)
-- [ ] Margem e padding
-- [ ] Layout com `flexbox`
+- [x ] Cores
+- [x ] Tipografia (e.g. `font-family`)
+- [x ] Margem e padding
+- [ x] Layout com `flexbox`
 - [ ] Layout com `grid`
-- [ ] Responsividade (`media queries`)
+- [x ] Responsividade (`media queries`)
 - [ ] Animações ou transições
 
 ## ⚙️ JavaScript
 
-- [ ] Manipulação do DOM
-- [ ] Eventos (`click`, `submit`, etc.)
-- [ ] Validação de formulário
-- [ ] Alteração dinâmica de conteúdo
-- [ ] Uso de funções
-- [ ] Uso de arrays ou objetos
+- [ x] Manipulação do DOM
+- [ x] Eventos (`click`, `submit`, etc.)
+- [ x] Validação de formulário
+- [x ] Alteração dinâmica de conteúdo
+- [ x] Uso de funções
+- [ x] Uso de arrays ou objetos
 - [ ] Uso de `fetch` ou API externa
-- [ ] local Storage
+- [ x] local Storage
 
 
 ## 📂 Estrutura do projeto
@@ -118,12 +124,12 @@ Descreva brevemente a organização dos arquivos do seu projeto.
 Exemplo:
 
 ```
-site/
+MuseuVirtual/
 │
 ├── index.html
-├── pages/
-│   ├── about.html
-│   └── contact.html
+├── salas.html
+├── criar-museu.html
+├── meu-museu.html
 │
 ├── css/
 │   └── style.css
@@ -131,15 +137,17 @@ site/
 ├── js/
 │   └── script.js
 │
-└── images/
-    ├── logo.png
-    └── banner.jpg
-```
+└── imagens/
 
 ## 💡 Observações
 
 Utilize este espaço para comentar:
 
-- dificuldades encontradas
-- decisões de design
-- melhorias que podem ser feitas no futuro
+- dificuldades encontradas Organizar a navegação entre as páginas.
+Implementar o armazenamento das informações utilizando localStorage.
+Exibir corretamente o museu criado pelo usuário
+- decisões de design  Utilização de tons de azul como cor principal.
+Interface simples e intuitiva.
+- melhorias que podem ser feitas no futuro Permitir a criação de vários museus.
+Adicionar edição e exclusão de museus.
+Criar um sistema de login para salvar os museus por usuário.
